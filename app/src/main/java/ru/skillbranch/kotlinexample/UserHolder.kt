@@ -25,7 +25,8 @@ object UserHolder {
     ):User{
         return User.makeUser(fullName, phone=phone)
             .also { user->
-                if(map.containsKey(user.login)) throw IllegalArgumentException("A user with this email already exists")
+                if(map.containsKey(user.login)) throw IllegalArgumentException("A user with this phone already exists")
+//                if ()
                 map[user.login] = user }
     }
 
