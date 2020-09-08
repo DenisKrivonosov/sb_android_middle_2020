@@ -21,6 +21,7 @@ class CheckableImageView @JvmOverloads constructor(
         setOnClickListener(this)
     }
 
+
     override fun onCreateDrawableState(extraSpace: Int): IntArray {
         val drawableState =  super.onCreateDrawableState(extraSpace + 1)
         if(isChecked) View.mergeDrawableStates(drawableState, CHECKED_STATE_SET)
