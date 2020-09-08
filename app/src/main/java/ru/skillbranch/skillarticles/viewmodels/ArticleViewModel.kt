@@ -66,6 +66,7 @@ class ArticleViewModel(private val articleId:String):
     }
 
 
+
     fun handleUpText(){
         repository.updateSettings(currentState.toAppSettings().copy(isBigText = true))
     }
