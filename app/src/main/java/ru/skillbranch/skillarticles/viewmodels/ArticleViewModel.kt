@@ -116,7 +116,7 @@ class ArticleViewModel(private val articleId:String):
         notify(msg)
     }
     override fun handleShare(){
-        val msg = "Share is not implemented yet"
+        val msg = "Share is not implemented"
         notify(Notify.ErrorMessage(msg, "OK", null))
 
     }
